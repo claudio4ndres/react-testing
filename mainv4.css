@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+
+/* Futura-Light-Italic webfont (new-bulletproof) */
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/futura/Futura-Light-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura/Futura-Light-Italic.woff') format('woff'),
+        url('../fonts/futura/Futura-Light-Italic.ttf') format('truetype'),
+        url('../fonts/futura/Futura-Light-Italic.svg#webfont') format('svg');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+/* Futura-Bold-Italic webfont (new-bulletproof) */
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/futura/Futura-Bold-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura/Futura-Bold-Italic.woff') format('woff'),
+        url('../fonts/futura/Futura-Bold-Italic.ttf') format('truetype'),
+        url('../fonts/futura/Futura-Bold-Italic.svg#webfont') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Futura-Bold webfont (new-bulletproof) */
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/futura/Futura-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura/Futura-Bold.woff') format('woff'),
+        url('../fonts/futura/Futura-Bold.ttf') format('truetype'),
+        url('../fonts/futura/Futura-Bold.svg#webfont') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Futura-Book-Italic webfont (new-bulletproof) */
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/futura/Futura-Book-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura/Futura-Book-Italic.woff') format('woff'),
+        url('../fonts/futura/Futura-Book-Italic.ttf') format('truetype'),
+        url('../fonts/futura/Futura-Book-Italic.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Futura-Book webfont (new-bulletproof) */
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/futura/Futura-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura/Futura-Book.woff') format('woff'),
+        url('../fonts/futura/Futura-Book.ttf') format('truetype'),
+        url('../fonts/futura/Futura-Book.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Futura-Light webfont (new-bulletproof) */
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/futura/Futura-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura/Futura-Light.woff') format('woff'),
+        url('../fonts/futura/Futura-Light.ttf') format('truetype'),
+        url('../fonts/futura/Futura-Light.svg#webfont') format('svg');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+/* Futura-Medium-Italic webfont (new-bulletproof) */
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/futura/Futura-Medium-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura/Futura-Medium-Italic.woff') format('woff'),
+        url('../fonts/futura/Futura-Medium-Italic.ttf') format('truetype'),
+        url('../fonts/futura/Futura-Medium-Italic.svg#webfont') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Futura-Medium webfont (new-bulletproof) */
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/futura/Futura-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura/Futura-Medium.woff') format('woff'),
+        url('../fonts/futura/Futura-Medium.ttf') format('truetype'),
+        url('../fonts/futura/Futura-Medium.svg#webfont') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4000px;
+    z-index: 999999999999999999;
+    background: white;
+}
+
+.tendencias19 {
+    overflow: hidden;
+}
+
+.tendencias19 picture {
+    position: relative;
+}
+
+.header * {
+    transition: all 200ms ease-in-out;
+}
+
+.header {
+    text-align: center;
+}
+
+.header .slide {
+    display: none !important;
+}
+
+.header .header__block nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 4vw 0 8vw 0;
+}
+
+.header .header__block nav>a {
+    font-size: 5vw;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+}
+
+.header .header__block nav>a span {
+    display: none;
+}
+
+.header .header__block h1 {
+    font-weight: bold;
+    text-transform: lowercase;
+    color: #000;
+    font-size: 12vw;
+    line-height: 8vw;
+    margin-top: 8vw;
+}
+
+.header .header__block h1 small {
+    font-size: 5vw;
+    font-weight: normal;
+    display: block;
+}
+
+.mundo {
+    padding: 0 4vw;
+    margin: 0 0 9vw 0;
+    position: relative;
+}
+
+.cotele {
+    margin: 0 0 5vw 0 !important;
+}
+
+.mundo .productos {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.mundo .productos a {
+    width: calc(50% - 2vw);
+    text-decoration: none;
+}
+
+.mundo .mundo__vertodo {
+    display: none !important;
+}
+
+.mundo .productos a small {
+    font-family: 'Roboto', sans-serif;
+    text-transform: lowercase;
+    color: black;
+    font-size: 3.2vw;
+    font-weight: bold;
+    margin-top: .4vw;
+    display: block;
+    text-align: center;
+}
+
+.mundo .mundo__categoria {
+    margin-bottom: 4vw;
+    position: relative;
+}
+
+.mundo .mundo__producto__comprar {
+    display: block !important;
+    font-size: 3.2vw;
+    line-height: 3vw;
+}
+
+.complementarios {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 3vw 1vw;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.complementarios a {
+    width: 30%;
+    display: block;
+}
+
+.skus {
+    padding: 42px 0;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skus .slide {
+    padding: 0 7vw;
+    position: relative;
+}
+
+.skus .slide .slide__item {
+    padding: 0 1vw;
+}
+
+.skus .slide .slide__item a {
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+}
+
+.skus .slide .slide__info {
+    font-family: 'Roboto', sans-serif;
+    text-transform: lowercase;
+    color: black;
+    font-size: 3.2vw;
+    font-weight: bold;
+    margin-top: .4vw;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+
+.skus .slide .owl-prev,
+.skus .slide .owl-next {
+    font-family: 'Roboto', sans-serif;
+    text-transform: lowercase;
+    color: black;
+    font-size: 4vw;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 99999;
+}
+
+.skus .slide .owl-prev {
+    left: 1.5vw;
+}
+
+.skus .slide .owl-next {
+    right: 1.5vw;
+}
+
+.skus .skus__titulo {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: lowercase;
+    color: black;
+    font-size: 5vw;
+    font-weight: bold;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+}
+
+@media screen and (min-width: 576px) {
+
+    .loader {
+        display: none;
+    }
+
+    .header {
+        background: #f2f2f2;
+        color: #000;
+        width: 100%;
+        /*height: 67.56vw;*/
+        height: 50vw;
+        /*height: calc(100% + 10vw);*/
+        /*max-height: 80vw;*/
+        position: relative;
+    }
+
+    .header .slide {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block !important;
+    }
+
+    .header .slide {
+        height: auto;
+        width: auto;
+        margin-left: auto;
+        right: 0;
+        top: 0;
+        position: absolute;
+        display: flex;
+        flex-flow: row nowrap;
+        text-align: right;
+    }
+
+    .header .slide__item {
+        height: 100%;
+        width: auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .header .slide__item img {
+        position: relative;
+        width: 60vw;
+        height: 67.56vw;
+    }
+
+    .header .slide__item.slide1 img {
+        /*right: -3vw;*/
+    }
+
+    .header .slide img {
+        object-fit: contain;
+        height: 50vw;
+        object-position: bottom;
+    }
+
+    .header .header__block {
+        position: relative;
+        z-index: 999;
+        max-width: 20vw;
+        height: 100%;
+    }
+
+    .header .header__block h1 {
+        font-weight: bold;
+        text-transform: lowercase;
+        color: #000;
+        font-size: 4.3vw;
+        padding-top: 6vw;
+        padding-left: 6vw;
+        line-height: 3vw;
+        margin-top: 0;
+        position: relative;
+    }
+
+    .header .header__block h1 small {
+        font-size: 2vw;
+        font-weight: normal;
+        display: block;
+        right: 0;
+        transform: translateX(100%);
+    }
+
+    .header .header__block nav {
+        padding-top: 10vw;
+        padding-left: 6vw;
+        display: block;
+        margin: 0;
+    }
+
+    .header .header__block nav>a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 0.8vw;
+        font-size: 1.8vw;
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .header .header__block nav>a span {
+        font-size: 1vw;
+        margin-right: .8vw;
+        display: inline-block;
+    }
+
+    .header .header__block nav>a:hover,
+    .header .header__block nav>a.active {
+        font-size: 2.6vw;
+        margin-left: -.2vw;
+    }
+
+    .header .header__block nav>a:hover span,
+    .header .header__block nav>a.active span {
+        font-size: 1.8vw;
+        margin-right: .5vw;
+    }
+
+    .mundo {
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 0 1vw;
+        margin: 6vw 0;
+    }
+
+    .mundo .mundo__categoria {
+        position: relative;
+        width: 33.333%;
+        z-index: 9999;
+        margin-bottom: 0;
+    }
+
+    .mundo .mundo__categoria img {
+        box-shadow: 0 0.4vw black;
+    }
+
+    .mundo:nth-of-type(odd) .mundo__categoria {
+        order: 2;
+    }
+
+    .mundo .mundo__vertodo {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translateX(99%) translateY(0);
+        /*transform: translateX(99%) translateY(.4vw);*/
+        border-bottom: .4vw solid black;
+        padding-left: 4vw;
+        font-weight: bold;
+        text-transform: lowercase;
+        font-size: 2vw;
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        text-decoration: none;
+        display: block !important;
+    }
+
+    .mundo:nth-of-type(odd) .mundo__vertodo {
+        transform: translateX(-99%) translateY(0);
+        /*transform: translateX(-99%) translateY(.4vw);*/
+        left: 0;
+        right: auto;
+        padding-left: 0;
+        padding-right: 4vw;
+    }
+
+    .mundo .productos {
+        margin-top: 4vw;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        padding-left: 4vw;
+        box-sizing: border-box;
+        width: 66.666%;
+        justify-content: space-between;
+        max-height: 48vw;
+    }
+
+    .mundo:nth-of-type(odd) .productos {
+        padding-left: 0;
+        padding-right: 4vw;
+    }
+
+    .mundo .productos a {
+        width: calc(50% - 2vw);
+        text-decoration: none;
+    }
+
+    .mundo .productos a img,
+    .mundo .productos a video {
+        width: 100%;
+        height: auto;
+    }
+
+    .mundo .productos a video {
+        object-fit: cover;
+        border-radius: 1px;
+        height: 42.75vw;
+    }
+
+    .mundo .productos a small {
+        font-family: 'Roboto', sans-serif;
+        text-transform: lowercase;
+        color: black;
+        font-size: 1.2vw;
+        font-weight: bold;
+        margin-top: .4vw;
+        display: block;
+        text-align: left;
+    }
+
+    .mundo .mundo__producto__precio {
+        display: flex !important;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .mundo .mundo__producto__comprar {
+        display: inline !important;
+        font-size: 1.2vw;
+        line-height: 1.5vw;
+    }
+
+    .skus .slide {
+        padding: 0 4vw;
+    }
+
+    .skus .slide .slide__info {
+        font-size: 1.2vw;
+    }
+
+    .skus .slide .owl-prev,
+    .skus .slide .owl-next {
+        font-size: 2vw;
+    }
+
+    .skus .skus__titulo {
+        font-size: 3vw;
+        margin-bottom: 2vw;
+        margin-top: 2vw;
+    }
+
+}
+
+/*.mundo .mundo__categoria::before,
+.mundo .productos a::before {
+    content: '';
+    display: block;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 1000px 104px;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+}
+
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}*/
+
+
+@media screen and (min-width: 1401px) {
+    .header {
+        /*height: 945.828px;*/
+        height: 600px;
+        width: 100%;
+    }
+
+    .header .wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .header .slide__item img {
+        width: 840px;
+        /*height: 945.828px;*/
+        height: 600px;
+    }
+
+    .header .slide__item.slide1 img {
+        right: -42px;
+    }
+
+    .header .header__block {
+        max-width: 280px;
+    }
+
+    .header .header__block h1 {
+        font-size: 60.2px;
+        padding-top: 140px;
+        padding-left: 84px;
+        line-height: 42px;
+    }
+
+    .header .header__block h1 small {
+        font-size: 28px;
+    }
+
+    .header .header__block nav {
+        /*padding-top: 224px;*/
+        padding-top: 120px;
+        padding-left: 84px;
+    }
+
+    .header .header__block nav>a {
+        margin-bottom: 11.2px;
+        font-size: 21.6px;
+    }
+
+    .header .header__block nav>a span {
+        font-size: 14px;
+        margin-right: 11.2px;
+    }
+
+    .header .header__block nav>a:hover,
+    .header .header__block nav>a.active {
+        font-size: 36.4px;
+        margin-left: -2.8px;
+    }
+
+    .header .header__block nav>a:hover span,
+    .header .header__block nav>a.active span {
+        font-size: 25.2px;
+        margin-right: 7px;
+    }
+
+    .mundo {
+        padding: 0 14px;
+        margin: 84px auto;
+        max-width: 1400px;
+    }
+
+    .mundo .mundo__categoria img {
+        box-shadow: 0 5.6px black;
+    }
+
+    .mundo .mundo__vertodo {
+        transform: translateX(99%) translateY(-0.3px);
+        border-bottom: 5.6px solid black;
+        padding-left: 56px;
+        font-size: 28px;
+    }
+
+    .mundo:nth-of-type(odd) .mundo__vertodo {
+        transform: translateX(-99%) translateY(-0.3px);
+        padding-right: 56px;
+    }
+
+    .mundo .productos {
+        margin-top: 56px;
+        padding-left: 56px;
+        max-height: 672px;
+    }
+
+    .mundo:nth-of-type(odd) .productos {
+        padding-right: 56px;
+    }
+
+    .mundo .productos a {
+        width: calc(50% - 28px);
+    }
+
+    .mundo .productos a video {
+        height: 598.5px;
+    }
+
+    .mundo .productos a small {
+        font-size: 16.8px;
+        margin-top: 5.6px;
+    }
+
+    .mundo .mundo__producto__comprar {
+        font-size: 16.8px;
+        line-height: 21px;
+    }
+
+    .skus .slide {
+        padding: 0 56px;
+    }
+
+    .skus .slide .slide__info {
+        font-size: 12.8px;
+    }
+
+    .skus .slide .owl-prev,
+    .skus .slide .owl-next {
+        font-size: 28px;
+    }
+
+    .skus .skus__titulo {
+        font-size: 42px;
+        margin-bottom: 28px;
+        margin-top: 28px;
+    }
+    .cotele {
+        margin: 0 auto 70px auto !important;
+    }
+}
